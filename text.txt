@@ -1,0 +1,95 @@
+scriptkey = {}
+local keylist = {a, b, c}
+if scriptkey == keylist then
+	print("Script loaded")
+else
+	print("Script not loaded")
+end
+--[ afx ontop]
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+
+-- window
+local Window = Fluent:CreateWindow({
+	Title = "Script Premium" .. Fluent.Version,
+	SubTitle = "By Truong Van Phuoc",
+	TabWidth = 160,
+	Size = UDim2.fromOffset(520, 400),
+	Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+	Theme = "Dark",
+	MinimizeKey = Enum.KeyCode.Home -- Used when theres no MinimizeKeybind
+})
+-- notify (cho nĂ³ cháº¥t)
+Fluent:Notify({
+	Title = "TrgPhz",
+	Content = "By TrgPhz",
+	SubContent = "Hi", -- Optional
+	Duration = 3 -- Set to nil to make the notification not disappear
+})
+-- tabs script cho Ä‘áº³ng cáº¥p
+
+local Tabs = {
+	a = Window:AddTab({ Title = "Main", Icon = "home" }),
+}
+
+-- selection
+Tabs.a:AddParagraph({
+	Title = "TrgPhz",
+	Content = "Truong Van Phuoc"
+})
+
+Tabs.a:AddButton({
+	Title = "Azure Premium",
+	Description = "TrgPhz",
+	Callback = function()
+		 script_key = "RGxWehjlMGdXIpooQCdwvARKtJqLHTMy"
+getgenv().Team = "Marines"
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+	end
+})
+
+
+Tabs.a:AddButton({
+	Title = "Banana Hub",
+	Description = "TrgPhz",
+	Callback = function()
+		 repeat task.wait() until
+game:IsLoaded()
+getgenv().Key = "135a8c32fae830d7"
+getgenv().OldBanana = false
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+	end
+})
+
+Tabs.a:AddButton({
+	Title = "Maru hub",
+	Description = "TrgPhz",
+	Callback = function()
+		 getgenv().Key = "MARU-9ETP-Q4E7I-I39W-AXNHW-TL22"
+getgenv().id = "1207164366252679199"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+	end
+})
+
+Tabs.a:AddButton({
+	Title = "Luxury Hub",
+	Description = "TrgPhz",
+	Callback = function()
+		 _G.Key = "main_3vUsoSAuyioSx8dgKAD0"
+
+_G.DiscordId = "1166600783970709514"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NightsTimeZ/RoyryX/main/Loader.lua"))();		
+	end
+})
+
+Tabs.a:AddButton({
+	Title = "Normal Hub",
+	Description = "TrgPhz",
+	Callback = function()
+		 _G.Key = "JDXRE-56TPQ-8PX8V"
+
+_G.DiscordId = "1166600783970709514"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/WxHxCxKxExR/Normal_Mb/main/Script.lua"))();
+	end
+})
